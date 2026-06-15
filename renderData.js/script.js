@@ -192,8 +192,6 @@ function renderPumpCards(totalHead) {
 
     const maxFlow = Math.max(...data.flow);
     const estimatedFlow = getFlowAtHead(name, totalHead);
-
-    const price = data.price;
     count++;
 
     const card = document.createElement("div");
