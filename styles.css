@@ -913,7 +913,7 @@ footer a:hover {
   color: var(--green-dark);
 }
 
-.pump-card-flow-badge {
+.pump-card-flow-badge-green {
   margin-top: 10px;
   padding: 6px 10px;
   border-radius: 8px;
@@ -921,6 +921,17 @@ footer a:hover {
   font-weight: 800;
   text-align: center;
   background: var(--green-dark);
+  color: #fff;
+}
+
+.pump-card-flow-badge-orange {
+  margin-top: 10px;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  font-weight: 800;
+  text-align: center;
+  background: var(--orange);
   color: #fff;
 }
 
