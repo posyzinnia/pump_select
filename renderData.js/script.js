@@ -209,10 +209,10 @@ function renderPumpCards(totalHead) {
                             <strong>${maxFlow} ม³/ชม.</strong>
                         </div>
                     </div>
-                    <div class="pump-card-flow-badge">
+                    <div class="pump-card-flow-badge-green">
                         ≈ ${estimatedFlow !== null ? estimatedFlow.toFixed(2) + " ม³/ชม." : "-"}
                     </div>
-                    <div class="pump-card-flow-badge">
+                    <div class="pump-card-flow-badge-orange">
                         ≈ ${estimatedFlow !== null ? estimatedFlow.toFixed(2) + " ม³/ชม." : "-"}
                     </div>
                 `;
