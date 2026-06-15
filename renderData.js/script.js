@@ -214,9 +214,6 @@ function renderPumpCards(totalHead) {
                     <div class="pump-card-flow-badge">
                         ≈ ${estimatedFlow !== null ? estimatedFlow.toFixed(2) + " ม³/ชม." : "-"}
                     </div>
-                    <div class="pump-card-flow-badge">
-                        ${price}
-                    </div>
                 `;
     card.addEventListener("click", () => selectPumpCard(name, card));
     grid.appendChild(card);
