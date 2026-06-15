@@ -213,7 +213,7 @@ function renderPumpCards(totalHead) {
                         ≈ ${estimatedFlow !== null ? estimatedFlow.toFixed(2) + " ม³/ชม." : "-"}
                     </div>
                     <div class="pump-card-flow-badge">
-                        ${pump.price ? "฿" + pump.price.toLocaleString() : "-"}
+                        ${data.price ? "฿" + data.price.toLocaleString() : "-"}
                     </div>
                 `;
     card.addEventListener("click", () => selectPumpCard(name, card));
