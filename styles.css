@@ -924,6 +924,10 @@ footer a:hover {
   color: #fff;
 }
 
+.pump-card-flow-badge.orange {
+  background: var(--orange-dark);
+}
+
 
 #pump-curve-canvas-wrapper {
   background: #fff;
