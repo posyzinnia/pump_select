@@ -192,6 +192,7 @@ function renderPumpCards(totalHead) {
 
     const maxFlow = Math.max(...data.flow);
     const estimatedFlow = getFlowAtHead(name, totalHead);
+    const price = data.price;
     count++;
 
     const card = document.createElement("div");
@@ -209,11 +210,11 @@ function renderPumpCards(totalHead) {
                             <strong>${maxFlow} ม³/ชม.</strong>
                         </div>
                     </div>
-                    <div class="pump-card-flow-badge-green">
+                    <div class="pump-card-flow-badge">
                         ≈ ${estimatedFlow !== null ? estimatedFlow.toFixed(2) + " ม³/ชม." : "-"}
                     </div>
-                    <div class="pump-card-flow-badge-orange">
-                        ≈ ${estimatedFlow !== null ? estimatedFlow.toFixed(2) + " ม³/ชม." : "-"}
+                    <div class="pump-card-flow-badge">
+                        ≈ ${price.toFixed(2) + " บาท"}
                     </div>
                 `;
     card.addEventListener("click", () => selectPumpCard(name, card));
