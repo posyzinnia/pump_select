@@ -204,12 +204,12 @@ function renderPumpCards(totalHead) {
                     <div class="pump-card-name">${name}</div>
                     <div class="pump-card-stats">
                         <div class="pump-card-stat">
-                            <span>ไฟ</span>
-                            <strong>${power} ม.</strong>
+                            <span>รหัส</span>
+                            <strong>${power}</strong>
                         </div>
                         <div class="pump-card-stat">
                             <span>รูปแบบท่อ</span>
-                            <strong>${po} ม³/ชม.</strong>
+                            <strong>${po}</strong>
                         </div>
                     </div>
                     <div class="pump-card-flow-badge">
