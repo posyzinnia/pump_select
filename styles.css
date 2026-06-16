@@ -901,7 +901,7 @@ footer a:hover {
 }
 
 .pump-card-stat {
-  font-size: 12px;
+  font-size: 11px;
   color: var(--text-muted);
   display: flex;
   justify-content: space-between;
@@ -909,7 +909,7 @@ footer a:hover {
 }
 
 .pump-card-stat strong {
-  font-size: 8px;
+  font-size: 11px;
   color: var(--green-dark);
 }
 
