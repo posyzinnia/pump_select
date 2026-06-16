@@ -524,7 +524,7 @@ function calcDripperZone() {
   if (zonesRounded <= 1) {
     zoneNote.textContent = `✅ ปั๊มรองรับพื้นที่ทั้งหมดได้ในรอบเดียว (${totalRai} ไร่ ≤ ${raiPerPump.toFixed(2)} ไร่/รอบ)`;
   } else {
-    zoneNote.textContent = `แบ่งเป็น ${zonesRounded} โซน — รดน้ำโซนละ ${(totalRai / zonesRounded).toFixed(2)} ไร่ต่อรอบ`;
+    zoneNote.textContent = `แบ่งเป็น ${zonesRounded} โซน — รดน้ำโซนละ ${(totalRai / zonesRounded).toFixed(2)} ไร่ต่อรอบ เพื่อประสิทธิภาพสูงสุด`;
   }
 }
 
@@ -568,6 +568,6 @@ function calcSprinklerZone() {
   if (zonesRounded <= 1) {
     zoneNote.textContent = `✅ ปั๊มรองรับหัวสปริงเกอร์ทั้งหมดได้ในรอบเดียว (${totalHeads} หัว ≤ ${headsPerPump} หัว/รอบ)`;
   } else {
-    zoneNote.textContent = `แบ่งเป็น ${zonesRounded} โซน — โซนละ ~${Math.ceil(totalHeads / zonesRounded)} หัวต่อรอบ`;
+    zoneNote.textContent = `แบ่งเป็น ${zonesRounded} โซน — โซนละ ~${Math.ceil(totalHeads / zonesRounded)} หัวต่อรอบ เพื่อประสิทธิภาพสูงสุด`;
   }
 }
