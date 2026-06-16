@@ -657,12 +657,13 @@
                 <div id="zone-calc-section" class="zone-calc-section">
                     <div class="zone-calc-title">
                         <i class="fas fa-seedling" style="color:var(--green-dark);"></i>
-                        คำนวณจำนวนโซน / พื้นที่ที่ปั๊มรองรับได้
+                        รูปแบบการจ่ายน้ำ หัวน้ำหยด Dripper/สปริงเกอร์ มินิสปริงเกอร์
                     </div>
+                    
 
                     <div class="zone-tabs">
                         <button class="zone-tab active" onclick="switchZoneTab('dripper', this)">💧 หัวน้ำหยด Dripper</button>
-                        <button class="zone-tab" onclick="switchZoneTab('sprinkler', this)">🌀 สปริงเกอร์</button>
+                        <button class="zone-tab" onclick="switchZoneTab('sprinkler', this)">🌀 สปริงเกอร์ มินิสปริงเกอร์</button>
                     </div>
 
                     <!-- DRIPPER TAB -->
@@ -672,6 +673,7 @@
                         </p>
 
                         <div class="zone-step-label">ขั้นที่ 1 — จำนวนไร่ที่ปั๊มทำงานได้</div>
+                        
                         <div class="formula-pill">
                             <span>จำนวนไร่ที่ปั๊มทำงานได้</span>
                             <span style="opacity:0.5">=</span>
@@ -679,6 +681,11 @@
                         </div>
                         <div class="zone-inline-result" id="dripper-rai-result"></div>
 
+                        <div class="zone-step-label" style="margin-top:18px;">ขั้นที่ 2 — แบ่งโซน (ถ้าพื้นที่รวมมากกว่าขั้นที่ 1)</div>
+                        <div class="zone-info-box">
+                            <strong>หน่วยพื้นที่ที่ใช้คำนวณ</strong><br>
+                            1 ไร่ = 4 งาน = 400 ตารางวา = 1,600 ตารางเมตร
+                        </div>
                         <div class="zone-step-label" style="margin-top:18px;">ขั้นที่ 2 — แบ่งโซน (ถ้าพื้นที่รวมมากกว่าขั้นที่ 1)</div>
                         <div class="formula-pill" style="background:#FEF0E6;border-color:var(--orange);color:var(--orange);">
                             <span>จำนวนโซน</span>
@@ -712,7 +719,7 @@
                         </div>
 
                         <div class="input-group" style="margin-top:4px;">
-                            <label class="input-label" style="font-size:14px;">ปริมาณน้ำต่อหัวสปริงเกอร์</label>
+                            <label class="input-label" style="font-size:14px;">ปริมาณน้ำต่อหัวสปริงเกอร์ (สามารถ search หาข้อมูลได้)</label>
                             <div class="input-wrapper">
                                 <input type="number" id="sprinkler-lph" placeholder="เช่น 120" min="0" step="1" oninput="calcSprinklerZone()">
                                 <div class="input-unit">L/H</div>
