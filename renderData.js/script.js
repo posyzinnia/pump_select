@@ -193,6 +193,8 @@ function renderPumpCards(totalHead) {
     const maxFlow = Math.max(...data.flow);
     const estimatedFlow = getFlowAtHead(name, totalHead);
     const price = data.price;
+    const power = data.power;
+    const po = data.po;
     count++;
 
     const card = document.createElement("div");
@@ -202,12 +204,12 @@ function renderPumpCards(totalHead) {
                     <div class="pump-card-name">${name}</div>
                     <div class="pump-card-stats">
                         <div class="pump-card-stat">
-                            <span>Head Max</span>
-                            <strong>${maxHead} ม.</strong>
+                            <span>ไฟ</span>
+                            <strong>${power} ม.</strong>
                         </div>
                         <div class="pump-card-stat">
-                            <span>Flow Max</span>
-                            <strong>${maxFlow} ม³/ชม.</strong>
+                            <span>รูปแบบท่อ</span>
+                            <strong>${po} ม³/ชม.</strong>
                         </div>
                     </div>
                     <div class="pump-card-flow-badge">
