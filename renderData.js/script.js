@@ -180,8 +180,8 @@ function renderPumpCards(totalHead) {
   // Section label
   const label = document.createElement("p");
   label.style.cssText =
-    "font-size:13px;font-weight:700;color:var(--green-dark);margin-bottom:12px;";
-  label.textContent = `แสดงเฉพาะ ${typeLabel} ที่รองรับ Head ≥ ${totalHead.toFixed(1)} ม.`;
+    "font-size:15px;font-weight:700;color:var(--green-dark);margin-bottom:12px;";
+  label.textContent = `${typeLabel} ที่รองรับ Head ≥ ${totalHead.toFixed(1)} ม.`;
   grid.appendChild(label);
 
   let count = 0;
