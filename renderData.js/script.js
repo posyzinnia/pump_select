@@ -213,7 +213,7 @@ function renderPumpCards(totalHead) {
                         </div>
                     </div>
                     <div class="pump-card-flow-badge">
-                        ≈ ${estimatedFlow !== null ? estimatedFlow.toFixed(2) + " ม³/ชม." : "-"}
+                        ≈ ${estimatedFlow !== null ? estimatedFlow.toFixed(2) + " ม³(คิว)/ชม" : "-"}
                     </div>
                     <div class="pump-card-flow-badge-orange">
                         ${Number(price).toLocaleString('en-US')} บาท
