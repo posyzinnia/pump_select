@@ -463,7 +463,7 @@ function drawPumpCurve(pumpName) {
   if (estimatedFlow !== null) {
     flowResult.className = "pump-flow-result ok";
     flowLabel.textContent =
-      "✅ อัตราการไหลที่ Head " + totalHead.toFixed(1) + " เมตร";
+      "✅ อัตราการไหลที่ Head " + totalHead.toFixed(1) + " เมตร รูปแบบการจ่ายน้ำ ปากท่อ PVC";
     flowValue.textContent = estimatedFlow.toFixed(2) + " ม³/ชม.";
     flowUnit.textContent =
       "≈ " + ((estimatedFlow * 1000) / 60).toFixed(0) + " ลิตร/นาที";
